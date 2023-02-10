@@ -37,6 +37,11 @@
             <item index="28" class="java.lang.String" itemvalue="ion-button" />
             <item index="29" class="java.lang.String" itemvalue="ion-radio" />
             <item index="30" class="java.lang.String" itemvalue="ion-radio-group" />
+            <item index="31" class="java.lang.String" itemvalue="ion-buttons" />
+            <item index="32" class="java.lang.String" itemvalue="ion-menu-button" />
+            <item index="33" class="java.lang.String" itemvalue="ion-avatar" />
+            <item index="34" class="java.lang.String" itemvalue="ion-fab" />
+            <item index="35" class="java.lang.String" itemvalue="ion-fab-button" />
           </list>
         </value>
       </option>
