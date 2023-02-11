@@ -16,10 +16,6 @@ export class ErrorMessageComponent implements OnInit {
   ngOnInit() {}
 
   shouldShowComponent() {
-    // form.get('email')?.touched && form.get('email')?.errors?.required
-    if (this.field.touched && this.field.errors?.[this.error]) {
-      return true;
-    }
-    return false;
+    return !!(this.field.touched && this.field.errors?.[this.error]);
   }
 }
