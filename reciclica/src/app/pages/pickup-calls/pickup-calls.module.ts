@@ -4,20 +4,21 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { PickupCallsPageRoutingModule } from './pickup-calls-routing.module';
 
-import { HomePage } from './home.page';
+import { PickupCallsPage } from './pickup-calls.page';
 import {ComponentsModule} from '../../components/components.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    PickupCallsPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    PickupCallsPage
+  ]
 })
-export class HomePageModule {}
+export class PickupCallsPageModule {}
