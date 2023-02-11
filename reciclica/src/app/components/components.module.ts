@@ -4,10 +4,12 @@ import {FormsModule} from '@angular/forms';
 import {IonicModule} from "@ionic/angular";
 import {HomePageRoutingModule} from "../pages/home/home-routing.module";
 import {PickupCallCardComponent} from "./pickup-call-card/pickup-call-card.component";
+import {ErrorMessageComponent} from "./error-message/error-message.component";
 
 @NgModule({
   declarations: [
-    PickupCallCardComponent
+    PickupCallCardComponent,
+    ErrorMessageComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import {PickupCallCardComponent} from "./pickup-call-card/pickup-call-card.compo
     HomePageRoutingModule
   ],
   exports: [
-    PickupCallCardComponent
+    PickupCallCardComponent,
+    ErrorMessageComponent
   ]
 })
 
