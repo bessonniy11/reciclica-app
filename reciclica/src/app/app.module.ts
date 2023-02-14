@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {ComponentsModule} from "./components/components.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {AppStoreModule} from "../store/AppStoreModule";
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import {LoadingComponent} from "./components/loading/loading.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoadingComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot({
@@ -19,7 +22,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     AppRoutingModule,
     ComponentsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ...AppStoreModule,
+    StoreDevtoolsModule.instrument({maxAge: 25})
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
